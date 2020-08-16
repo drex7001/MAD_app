@@ -62,8 +62,8 @@
 
         //string resources for contact lecturer interface raz
         <string name="Contact_Lecturer_Header"> Contact Lecturer </string>
-        <string name="Contact_Lecturer_msg1"> Your message will be sent to: </string>
-        <string name="lecturer_prompt">Choose a lecturer:</string>
+        <string name="Contact_Lecturer_msg1"> Your message will be sent to </string>
+        <string name="lecturer_prompt">Choose a lecturer</string>
 
         <string-array name="lecturer_arrays">
             <item>lecturer1</item>
@@ -75,21 +75,14 @@
             <item>lecturer7</item>
             <item>lecturer8</item>
         </string-array>
-        <string name="message_prompt"> Enter Your Message Here: </string>
+        <string name="message_prompt"> Enter Your Message Here </string>
         <string name="Contact_Lecturer_btn1"> Add an Image </string>
         <string name="Contact_Lecturer_btn2"> Send </string>
 
-        //String resources for messages interface raz
-        <string name="Mesages_Interface_Header"> Messages </string>
-        <string name="sender_name"> FirstName LastName </string>
-        <string name="sender_msg"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porta purus. </string>
+    message_promptTV
 
-        //String Resources for Replay Interface Raz
-        <string name="Reply_Interface_Header1"> Reply to : </string>
-        <string name="Reply_Interface_Header2">  First Name </string>
-        <string name="Recived_MSG">  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porta purus. </string>
-        <string name="Sent_MSG">  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porta purus. </string>
-        <string name="Reply_MSG_Enter_Box">  Enter Reply </string>
+
+
     //String resources for myquizzes
     <string name="pubq">Published Quizzes</string>
     <string name="d">Drafts</string>
@@ -99,48 +92,7 @@
     <string name="read">Mark as read</string>
     <string name="clear">Clear all notifications</string>
 
-    //String resources of IT19223322
-    <string name="stdname">Student Name</string>
-    <string name="stdid">Student ID</string>
-    <string name="ps">Prob and Stat</string>
-    <string name="psmark"> </string>
-    <string name="dsa">DSA</string>
-    <string name="dsamark"> </string>
-    <string name="mad">MAD</string>
-    <string name="madmark"> </string>
-    <string name="average">Average</string>
-    <string name="averagevalue"> </string>
-
-    <string name="leaderboardtxt">Leader Board</string>
-    <string name="r1c1">Student ID</string>
-    <string name="r1c2">Student Name</string>
-    <string name="r1c3">Rank</string>
-    <string name="r1c4">More Info</string>
-    <string name="r2c1"> </string>
-    <string name="r2c2"> </string>
-    <string name="r2c3"> </string>
-    <string name="r3c1"> </string>
-    <string name="r3c2"> </string>
-    <string name="r3c3"> </string>
-
-
-    <string name = "stdname2">Student Name</string>
-    <string name = "stdid2">Student ID</string>
-    <string name = "date1">Date</string>
-    <string name = "time1">Time</string>
-    <string name = "notification1">Notification</string>
-    <string name = "msg1"> </string>
-    <string name = "msg2"> </string>
-    <string name = "msg3"> </string>
-    <string name = "msg4"> </string>
-    <string name = "msg5"> </string>
-    <string name = "msg6"> </string>
-
-    <string name = "stdname3">Student Name</string>
-    <string name = "stdid3">Student ID</string>
-    <string name = "messagebox"> Message</string>
-
-
+    //testcomment
 
 
 </resources>

@@ -9,34 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Messages_Reply_Interface_Raz">
-            <intent-filter>
-                <action android:name="com.company.package.FOO" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".Mesages_Interface_Raz">
-            <intent-filter>
-                <action android:name="com.company.package.FOO" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".Contact_Lecturer_Interface_Raz">
-            <intent-filter>
-                <action android:name="com.company.package.FOO" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".Quiz_End_Interface_Raz">
-            <intent-filter>
-                <action android:name="com.company.package.FOO" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
         <activity android:name=".notifications">
             <intent-filter>
                 <action android:name="com.company.package.FOO" />
@@ -89,40 +61,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".leaderboard_student_msg">
-            <intent-filter>
-                <action android:name="com.company.package.FOO" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
-        <activity android:name=".leaderboard_student_inbox" >
-            <intent-filter>
-                <action android:name="com.company.package.FOO" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>>
-
-        <activity android:name=".leaderboard_grid_sav">
-            <intent-filter>
-            <action android:name="com.company.package.FOO" />
-
-            <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>>
-        </activity>
-
-        <activity android:name=".leaderboard_sav">
-            <intent-filter>
-                <action android:name="com.company.package.FOO" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
-
     </application>
 
 </manifest>
