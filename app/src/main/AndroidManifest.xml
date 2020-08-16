@@ -9,6 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <activity android:name=".myquizzes">
+            <intent-filter>
+            <action android:name="com.company.package.FOO" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+
+        </activity>
+
         <activity android:name=".teacherview">
             <intent-filter>
                 <action android:name="com.company.package.FOO" />
@@ -16,15 +26,13 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".new_quiz">
+            <intent-filter>
+                <action android:name="com.company.package.FOO" />
 
-        <activity android:name=".new_quiz" >
-        <intent-filter>
-            <action android:name="com.company.package.FOO" />
-            <category android:name="android.intent.category.DEFAULT" />
-        </intent-filter>
-    </activity>
-
-
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity android:name=".Quiz_type">
             <intent-filter>
                 <action android:name="com.company.package.FOO" />

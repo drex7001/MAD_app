@@ -24,7 +24,6 @@
     //testcomment
 
 
-
     //Strings for teacherview
 
     <string name="Msg1">Logged In As</string>
@@ -46,7 +45,7 @@
     <string name="addq">Add another question</string>
     <string name="pub">Publish</string>
 
-    
+
     //string resources for Rasitha
     <string name="end_quiz">Quiz Ended</string>
     <string name="you_got">You Got:</string>
@@ -55,5 +54,12 @@
     <string name="correct_ans"> correct </string>
     <string name="contact_lecturer"> contact Lecturer </string>
     <string name="home_button"> Home </string>
+
+    //String resources for myquizzes
+    <string name="pubq">Published Quizzes</string>
+    <string name="d">Drafts</string>
+    <string name="qname">""QUIZNAME""</string>
+
+
 
 </resources>
