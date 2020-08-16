@@ -2,7 +2,7 @@
     <string name="app_name">MADMiniProject</string>
     <string name="dashboard">My Dashboard</string>
     <string name="quiz">Quiz</string>
-    <string name="achivement">Achivement</string>
+    <string name="achivement">Achievement</string>
     <string name="forum">Forum</string>
     <string name="notification">Notification</string>
     <string name="edit_profile">Edit Profile</string>
@@ -19,6 +19,7 @@
     <string name="php">PHP</string>
     <string name="c">C</string>
     <string name="cpp">C++</string>
+    <string name="notification1">Notification</string>
 
 
     //testcomment
@@ -35,6 +36,19 @@
     <string name="correct">Correct</string>
     <string name="myquiz">My Quizzes</string>
     <string name="Messages">Messages</string>
+    <string name="Loggedin">Logged in as</string>
+
+    //Strings for new quiz
+
+    <string name="createquiz">Create A New Quiz</string>
+    <string name="entertitle">Enter a quiz title (Optional)</string>
+    <string name="ans1">Type your first answer here</string>
+    <string name="ans2">Type your second answer here</string>
+    <string name="ans3">Type your third answer here</string>
+    <string name="ans4">Type your fourth answer here</string>
+    <string name="addq">Add another question</string>
+    <string name="pub">Publish</string>
+
 
 
 
