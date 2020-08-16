@@ -87,7 +87,9 @@
         //String Resources for Replay Interface Raz
         <string name="Reply_Interface_Header1"> Reply to : </string>
         <string name="Reply_Interface_Header2">  First Name </string>
-
+        <string name="Recived_MSG">  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porta purus. </string>
+        <string name="Sent_MSG">  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porta purus. </string>
+        <string name="Reply_MSG_Enter_Box">  Enter Reply </string>
     //String resources for myquizzes
     <string name="pubq">Published Quizzes</string>
     <string name="d">Drafts</string>

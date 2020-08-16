@@ -17,5 +17,16 @@ public class Messages_Reply_Interface_Raz extends AppCompatActivity {
 
         TextView Reply_Interface_Header2 = findViewById(R.id.Reply_Interface_Header2TV);
         Reply_Interface_Header2.setText(R.string.Reply_Interface_Header2);
+
+        TextView Recived_MSG = findViewById(R.id.Recived_MSG_TV);
+        Recived_MSG.setText(R.string.Recived_MSG);
+
+        TextView Sent_MSG = findViewById(R.id.Sent_MSG_TV);
+        Sent_MSG.setText(R.string.Sent_MSG);
+
+        TextView Reply_MSG_Enter_Box = findViewById(R.id.Reply_MSG_Enter_BoxTV);
+        Reply_MSG_Enter_Box.setText(R.string.Reply_MSG_Enter_Box);
+
+
     }
 }
