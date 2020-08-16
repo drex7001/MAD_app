@@ -51,13 +51,37 @@
 
 
     //string resources for Rasitha
-    <string name="end_quiz">Quiz Ended</string>
-    <string name="you_got">You Got:</string>
-    <string name="percentage_correct"> 80% </string>
-    <!--  this is a place holder for pie chart percentage  -->
-    <string name="correct_ans"> correct </string>
-    <string name="contact_lecturer"> contact Lecturer </string>
-    <string name="home_button"> Home </string>
+        //string resources for quiz end interface raz
+        <string name="end_quiz">Quiz Ended</string>
+        <string name="you_got">You Got:</string>
+        <string name="percentage_correct"> 80% </string>
+        <!--  this is a place holder for pie chart percentage  -->
+        <string name="correct_ans"> correct </string>
+        <string name="contact_lecturer"> contact Lecturer </string>
+        <string name="home_button"> Home </string>
+
+        //string resources for contact lecturer interface raz
+        <string name="Contact_Lecturer_Header"> Contact Lecturer </string>
+        <string name="Contact_Lecturer_msg1"> Your message will be sent to </string>
+        <string name="lecturer_prompt">Choose a lecturer</string>
+
+        <string-array name="lecturer_arrays">
+            <item>lecturer1</item>
+            <item>lecturer2</item>
+            <item>lecturer3</item>
+            <item>lecturer4</item>
+            <item>lecturer5</item>
+            <item>lecturer6</item>
+            <item>lecturer7</item>
+            <item>lecturer8</item>
+        </string-array>
+        <string name="message_prompt"> Enter Your Message Here </string>
+        <string name="Contact_Lecturer_btn1"> Add an Image </string>
+        <string name="Contact_Lecturer_btn2"> Send </string>
+
+    message_promptTV
+
+
 
     //String resources for myquizzes
     <string name="pubq">Published Quizzes</string>
