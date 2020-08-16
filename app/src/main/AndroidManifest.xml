@@ -9,16 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".notifications">
+            <intent-filter>
+                <action android:name="com.company.package.FOO" />
 
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity android:name=".myquizzes">
             <intent-filter>
-            <action android:name="com.company.package.FOO" />
+                <action android:name="com.company.package.FOO" />
 
-            <category android:name="android.intent.category.DEFAULT" />
-        </intent-filter>
-
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
-
         <activity android:name=".teacherview">
             <intent-filter>
                 <action android:name="com.company.package.FOO" />

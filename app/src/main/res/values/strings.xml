@@ -60,6 +60,9 @@
     <string name="d">Drafts</string>
     <string name="qname">""QUIZNAME""</string>
 
+    <string name="not">Notification</string>
+    <string name="read">Mark as read</string>
+    <string name="clear">Clear all notifications</string>
 
 
 </resources>
