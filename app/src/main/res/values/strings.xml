@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">MADMiniProject</string>
+    <string name="dashboard">My Dashboard</string>
+    <string name="quiz">Quiz</string>
+    <string name="achivement">Achivement</string>
+    <string name="forum">Forum</string>
+    <string name="notification">Notification</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="title_activity_quiz_drex">Quiz_drex</string>
+    <string name="tab_text_1">Last</string>
+    <string name="tab_text_2">Name</string>
+    <string name="tab_text_3">Complete</string>
+    <string name="java">Java</string>
+    <string name="python">Python</string>
+    <string name="java_script">Java Script</string>
+    <string name="r">R</string>
+    <string name="sql">SQL</string>
+    <string name="php">PHP</string>
+    <string name="c">C</string>
+    <string name="cpp">C++</string>
+
+
+    //testcomment
+</resources>
