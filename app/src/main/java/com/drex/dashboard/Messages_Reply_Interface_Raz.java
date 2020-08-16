@@ -25,7 +25,7 @@ public class Messages_Reply_Interface_Raz extends AppCompatActivity {
         Sent_MSG.setText(R.string.Sent_MSG);
 
         TextView Reply_MSG_Enter_Box = findViewById(R.id.Reply_MSG_Enter_BoxTV);
-        Reply_MSG_Enter_Box.setText(R.string.Reply_MSG_Enter_Box);
+        Reply_MSG_Enter_Box.setHint(R.string.Reply_MSG_Enter_Box);
 
 
     }
