@@ -19,6 +19,8 @@
     <string name="php">PHP</string>
     <string name="c">C</string>
     <string name="cpp">C++</string>
+    <string name="java_quiz">JAVA</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting </string>
 
 
     //testcomment
