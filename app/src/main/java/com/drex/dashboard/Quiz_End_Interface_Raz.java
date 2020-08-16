@@ -24,7 +24,7 @@ public class Quiz_End_Interface_Raz extends AppCompatActivity {
         correct_Percentage.setText(R.string.percentage_correct);
 
         TextView correct = findViewById(R.id.correctTV);
-        correct.setText(R.string.correct);
+        correct.setText(R.string.correct_ans);
 
         TextView home_button = findViewById(R.id.HomeBut);
         home_button.setText(R.string.home_button);

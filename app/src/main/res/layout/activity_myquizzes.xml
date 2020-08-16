@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".myquizzes">
+
+    <ImageButton
+        android:id="@+id/deleteq7"
+        android:layout_width="43dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="309dp"
+        android:layout_marginTop="633dp"
+        android:layout_marginBottom="62dp"
+        android:background="#6A1B9A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+
+    <ImageButton
+        android:id="@+id/deleteq6"
+        android:layout_width="43dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="309dp"
+        android:layout_marginTop="588dp"
+        android:layout_marginBottom="107dp"
+        android:background="#6A1B9A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+
+    <ImageButton
+        android:id="@+id/deleteq5"
+        android:layout_width="43dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="309dp"
+        android:layout_marginTop="542dp"
+        android:layout_marginBottom="153dp"
+        android:background="#6A1B9A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+
+    <ImageButton
+        android:id="@+id/deleteq4"
+        android:layout_width="43dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="309dp"
+        android:layout_marginTop="416dp"
+        android:layout_marginBottom="279dp"
+        android:background="#6A1B9A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+
+    <ImageButton
+        android:id="@+id/deleteq3"
+        android:layout_width="43dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="308dp"
+        android:layout_marginTop="371dp"
+        android:layout_marginBottom="324dp"
+        android:background="#6A1B9A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+
+    <ImageButton
+        android:id="@+id/deleteq2"
+        android:layout_width="43dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="308dp"
+        android:layout_marginTop="329dp"
+        android:layout_marginBottom="366dp"
+        android:background="#6A1B9A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+
+    <ImageButton
+        android:id="@+id/deleteq1"
+        android:layout_width="43dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="308dp"
+        android:layout_marginTop="285dp"
+        android:layout_marginBottom="410dp"
+        android:background="#6A1B9A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+
+    <Button
+        android:id="@+id/quiz7"
+        android:layout_width="224dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="633dp"
+        android:layout_marginBottom="62dp"
+        android:background="#C62828"
+        android:text="@string/qname"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/quiz6"
+        android:layout_width="224dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="588dp"
+        android:layout_marginBottom="107dp"
+        android:background="#C62828"
+        android:text="@string/qname"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/quiz5"
+        android:layout_width="222dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="542dp"
+        android:layout_marginBottom="153dp"
+        android:background="#C62828"
+        android:text="@string/qname"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/drafts"
+        android:layout_width="291dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="468dp"
+        android:layout_marginBottom="202dp"
+        android:background="#C62828"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="@string/d"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/quiz4"
+        android:layout_width="224dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="416dp"
+        android:layout_marginBottom="279dp"
+        android:background="#2E7D32"
+        android:text="@string/qname"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/quiz3"
+        android:layout_width="224dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="371dp"
+        android:layout_marginBottom="324dp"
+        android:background="#2E7D32"
+        android:text="@string/qname"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/quiz2"
+        android:layout_width="224dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="329dp"
+        android:layout_marginBottom="366dp"
+        android:background="#2E7D32"
+        android:text="@string/qname"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="44dp"
+        android:autofillHints=""
+        android:clickable="false"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:inputType="textPersonName"
+        android:lines="@android:integer/config_mediumAnimTime"
+        android:text="Quiz Manager"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#E91E63"
+        android:textFontWeight="@android:integer/config_mediumAnimTime"
+        android:textSize="45sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout2"
+        android:layout_width="422dp"
+        android:layout_height="41dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.169"
+        app:tabBackground="?attr/actionBarDivider"
+        app:tabIconTint="@color/colorAccent"
+        app:tabIndicator="@drawable/ic_launcher_background"
+        app:tabIndicatorColor="#013E67"
+        app:tabRippleColor="#0325E4"
+        app:tabTextColor="#FFFFFF">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/newqbim" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/myquiz" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notification" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Messages" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="171dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="2dp"
+        android:text="Logged in as"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pubquiz"
+        android:layout_width="291dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="207dp"
+        android:layout_marginBottom="463dp"
+        android:background="#2E7D32"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="@string/pubq"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/quiz1"
+        android:layout_width="224dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="285dp"
+        android:layout_marginBottom="410dp"
+        android:background="#2E7D32"
+        android:text="@string/qname"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
