@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".new_quiz">
+
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:background="#00"
+        android:clickable="false"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:inputType="textPersonName"
+        android:lines="@android:integer/config_mediumAnimTime"
+        android:text="Quiz Manager"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#E91E63"
+        android:textFontWeight="@android:integer/config_mediumAnimTime"
+        android:textSize="45sp"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="44dp" />
+
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout2"
+        android:layout_width="420dp"
+        android:layout_height="29dp"
+        android:background="#FA0055"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.168"
+        app:tabBackground="@android:drawable/title_bar"
+        app:tabIconTint="@color/colorAccent"
+        app:tabIndicator="@drawable/ic_launcher_background"
+        app:tabIndicatorColor="#670101"
+        app:tabRippleColor="#0325E4"
+        app:tabSelectedTextColor="#E91E63"
+        app:tabTextColor="#FFFFFF">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Quiz" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Quizzes" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notification" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Messages" />
+    </com.google.android.material.tabs.TabLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

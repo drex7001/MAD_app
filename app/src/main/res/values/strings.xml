@@ -22,4 +22,20 @@
 
 
     //testcomment
+
+
+
+    //Strings for teacherview
+
+    <string name="Msg1">Logged In As</string>
+    <string name="Msg2">"Name"</string>
+    <string name="Msg3">"My Account"</string>
+    <string name="Msg4">"Logout"</string>
+    <string name="Msg5">"Create A Quiz"</string>
+    <string name="correct">Correct</string>
+    <string name="myquiz">My Quizzes</string>
+    <string name="Messages">Messages</string>
+
+
+
 </resources>
