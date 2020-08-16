@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="stdname">Student Name</string>
+    <string name="stdid">Student ID</string>
+    <string name="ps">Prob and Stat</string>
+    <string name="psmark"> </string>
+    <string name="dsa">DSA</string>
+    <string name="dsamark"> </string>
+    <string name="mad">MAD</string>
+    <string name="madmark"> </string>
+    <string name="average">Average</string>
+    <string name="averagevalue"> </string>
+
+    <string name="leaderboardtxt">Leader Board</string>
+    <string name="r1c1">Student ID</string>
+    <string name="r1c2">Student Name</string>
+    <string name="r1c3">Rank</string>
+    <string name="r1c4">More Info</string>
+    <string name="r2c1"> </string>
+    <string name="r2c2"> </string>
+    <string name="r2c3"> </string>
+    <string name="r3c1"> </string>
+    <string name="r3c2"> </string>
+    <string name="r3c3"> </string>
+
+
+    <string name = "stdname2">Student Name</string>
+    <string name = "stdid2">Student ID</string>
+    <string name = "date1">Date</string>
+    <string name = "time1">Time</string>
+    <string name = "notification1">Notification</string>
+    <string name = "msg1"> </string>
+    <string name = "msg2"> </string>
+    <string name = "msg3"> </string>
+    <string name = "msg4"> </string>
+    <string name = "msg5"> </string>
+    <string name = "msg6"> </string>
+
+    <string name = "stdname3">Student Name</string>
+    <string name = "stdid3">Student ID</string>
+    <string name = "messagebox"> Message</string>
+
+
+
+
+
+</resources>

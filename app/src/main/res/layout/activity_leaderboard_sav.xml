@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".leaderboard_sav">
+
+    <TextView
+        android:id="@+id/txtvw1"
+        android:layout_width="122dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="273dp"
+        android:layout_marginBottom="669dp"
+        android:background="@color/colorAccent"
+        android:text="@string/stdname"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtvw2"
+        android:layout_width="123dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="86dp"
+        android:layout_marginBottom="601dp"
+        android:background="@color/colorAccent"
+        android:text="@string/stdid"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imgvw1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="205dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="582dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txtvw3"
+        android:layout_width="127dp"
+        android:layout_height="68dp"
+        android:background="@color/colorAccent"
+        android:text="@string/ps"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.33" />
+
+    <TextView
+        android:id="@+id/txtvw4"
+        android:layout_width="156dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="222dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginBottom="453dp"
+        android:background="@android:color/darker_gray"
+        android:text="@string/psmark"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtvw5"
+        android:layout_width="86dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="306dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="361dp"
+        android:background="@color/colorAccent"
+        android:text="@string/dsa"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/txtvw6"
+        android:layout_width="151dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="174dp"
+        android:layout_marginTop="308dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginBottom="361dp"
+        android:background="@android:color/darker_gray"
+        android:text="@string/dsamark"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtvw7"
+        android:layout_width="94dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="402dp"
+        android:layout_marginEnd="298dp"
+        android:layout_marginBottom="264dp"
+        android:background="@color/colorAccent"
+        android:text="@string/mad"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtvw8"
+        android:layout_width="159dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="404dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="270dp"
+        android:background="@android:color/darker_gray"
+        android:text="@string/madmark"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtvw9"
+        android:layout_width="108dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="494dp"
+        android:layout_marginEnd="293dp"
+        android:layout_marginBottom="180dp"
+        android:background="@color/colorAccent"
+        android:text="@string/average"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/txtvw10"
+        android:layout_width="157dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="496dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginBottom="177dp"
+        android:background="@android:color/darker_gray"
+        android:text="@string/averagevalue"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="627dp"
+        android:layout_marginEnd="294dp"
+        android:layout_marginBottom="56dp"
+        android:text="Notify"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="205dp"
+        android:layout_marginTop="627dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginBottom="56dp"
+        android:text="Inbox"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
