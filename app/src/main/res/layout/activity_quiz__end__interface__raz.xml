@@ -5,18 +5,94 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg"
+    android:textAlignment="center"
     tools:context=".Quiz_End_Interface_Raz">
 
     <TextView
         android:id="@+id/QuizEndHeaderTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="132dp"
-        android:textSize="30sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="@color/design_default_color_on_primary"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.199"
+        tools:text="@string/end_quiz" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="374dp"
+        android:layout_height="236dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.539"
+        app:srcCompat="@drawable/pie_chart" />
+
+    <TextView
+        android:id="@+id/YouGotTV"
+        android:layout_width="119dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="72dp"
+        android:text="TextView"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.127"
-        tools:text="@string/end_quiz" />
+        app:layout_constraintVertical_bias="0.746" />
+
+    <TextView
+        android:id="@+id/CorrectPercentageTV"
+        android:layout_width="57dp"
+        android:layout_height="35dp"
+        android:text="TextView"
+        android:textColor="#28AF2D"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/YouGotTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/YouGotTV"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/correctTV"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="3dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/CorrectPercentageTV"
+        app:layout_constraintStart_toEndOf="@+id/CorrectPercentageTV"
+        app:layout_constraintTop_toTopOf="@+id/CorrectPercentageTV" />
+
+    <Button
+        android:id="@+id/HomeBut"
+        android:layout_width="212dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CorrectPercentageTV"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/ContactLecturerBut"
+        android:layout_width="210dp"
+        android:layout_height="46dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HomeBut"
+        app:layout_constraintVertical_bias="0.129" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
