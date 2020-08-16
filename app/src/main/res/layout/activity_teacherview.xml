@@ -48,7 +48,7 @@
                         android:layout_alignEnd="@id/myDashboard"
                         android:layout_marginTop="1dp"
                         android:layout_marginEnd="86dp"
-                        android:text="First Name "
+                        android:text="@string/use"
                         android:textColor="@android:color/white"
                         android:textSize="15sp"
                         android:textStyle="bold" />
@@ -57,10 +57,11 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_alignParentTop="true"
-                        android:layout_margin="30dp"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginEnd="10dp"
-                        android:layout_marginBottom="10dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="23dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginBottom="30dp"
                         android:layout_toRightOf="@id/myDashboard"
                         android:src="@drawable/man" />
 

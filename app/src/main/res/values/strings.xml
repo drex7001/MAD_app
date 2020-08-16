@@ -34,9 +34,11 @@
     <string name="correct">Correct</string>
     <string name="myquiz">My Quizzes</string>
     <string name="Messages">Messages</string>
+    <string name="use">Username</string>
 
     //String resources for new quiz
     <string name="newqbim">New Quiz</string>
+    <string name="newq">Create a new quiz</string>
     <string name="entertitle">Enter a quiz title (optional)</string>
     <string name="ans1">Insert the first answer</string>
     <string name="ans2">Insert the second answer</string>
