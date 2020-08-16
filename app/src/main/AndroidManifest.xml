@@ -9,21 +9,43 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Quiz_type">
+
+
+        <activity android:name=".Quiz_End_Interface_Raz">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="com.company.package.FOO"/>
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
+
+
+        <activity android:name=".Quiz_type">
+            <intent-filter>
+                <action android:name="com.company.package.FOO"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
 
         <activity
             android:name=".Quiz_drex"
             android:label="@string/title_activity_quiz_drex"
-            android:theme="@style/AppTheme.NoActionBar" >
-
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="com.company.package.FOO"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
 
+
+
         <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
         </activity>
     </application>
