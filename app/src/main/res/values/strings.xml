@@ -19,7 +19,85 @@
     <string name="php">PHP</string>
     <string name="c">C</string>
     <string name="cpp">C++</string>
+    <string name="java_quiz">JAVA</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting </string>
 
 
     //testcomment
+
+
+    //Strings for teacherview
+
+    <string name="Msg1">Logged In As</string>
+    <string name="Msg2">"Name"</string>
+    <string name="Msg3">"My Account"</string>
+    <string name="Msg4">"Logout"</string>
+    <string name="Msg5">"Create A Quiz"</string>
+    <string name="correct">Correct</string>
+    <string name="myquiz">My Quizzes</string>
+    <string name="Messages">Messages</string>
+    <string name="use">Username</string>
+
+    //String resources for new quiz
+    <string name="newqbim">New Quiz</string>
+    <string name="newq">Create a new quiz</string>
+    <string name="entertitle">Enter a quiz title (optional)</string>
+    <string name="ans1">Insert the first answer</string>
+    <string name="ans2">Insert the second answer</string>
+    <string name="ans3">Insert the third answer</string>
+    <string name="ans4">Insert the fourth answer</string>
+    <string name="addq">Add another question</string>
+    <string name="pub">Publish</string>
+
+
+    //string resources for Rasitha
+        //string resources for quiz end interface raz
+        <string name="end_quiz">Quiz Ended</string>
+        <string name="you_got">You Got:</string>
+        <string name="percentage_correct"> 80% </string>
+        <!--  this is a place holder for pie chart percentage  -->
+        <string name="correct_ans"> correct </string>
+        <string name="contact_lecturer"> contact Lecturer </string>
+        <string name="home_button"> Home </string>
+
+        //string resources for contact lecturer interface raz
+        <string name="Contact_Lecturer_Header"> Contact Lecturer </string>
+        <string name="Contact_Lecturer_msg1"> Your message will be sent to: </string>
+        <string name="lecturer_prompt">Choose a lecturer:</string>
+
+        <string-array name="lecturer_arrays">
+            <item>lecturer1</item>
+            <item>lecturer2</item>
+            <item>lecturer3</item>
+            <item>lecturer4</item>
+            <item>lecturer5</item>
+            <item>lecturer6</item>
+            <item>lecturer7</item>
+            <item>lecturer8</item>
+        </string-array>
+        <string name="message_prompt"> Enter Your Message Here: </string>
+        <string name="Contact_Lecturer_btn1"> Add an Image </string>
+        <string name="Contact_Lecturer_btn2"> Send </string>
+
+        //String resources for messages interface raz
+        <string name="Mesages_Interface_Header"> Messages </string>
+        <string name="sender_name"> FirstName LastName </string>
+        <string name="sender_msg"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porta purus. </string>
+
+        //String Resources for Replay Interface Raz
+        <string name="Reply_Interface_Header1"> Reply to : </string>
+        <string name="Reply_Interface_Header2">  First Name </string>
+        <string name="Recived_MSG">  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porta purus. </string>
+        <string name="Sent_MSG">  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porta purus. </string>
+        <string name="Reply_MSG_Enter_Box">  Enter Reply </string>
+    //String resources for myquizzes
+    <string name="pubq">Published Quizzes</string>
+    <string name="d">Drafts</string>
+    <string name="qname">""QUIZNAME""</string>
+
+    <string name="not">Notification</string>
+    <string name="read">Mark as read</string>
+    <string name="clear">Clear all notifications</string>
+
+
 </resources>
