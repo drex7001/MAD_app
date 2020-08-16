@@ -107,17 +107,17 @@
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Quiz" />
+            android:text="@string/newqbim" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="My Quizzes" />
+            android:text="@string/myquiz" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/notification1" />
+            android:text="@string/notification" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
@@ -131,7 +131,7 @@
         android:layout_height="25dp"
         android:layout_marginTop="3dp"
         android:layout_marginEnd="2dp"
-        android:text="@string/Loggedin"
+        android:text="Logged in as"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

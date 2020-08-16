@@ -35,6 +35,17 @@
     <string name="correct">Correct</string>
     <string name="myquiz">My Quizzes</string>
     <string name="Messages">Messages</string>
+
+    //String resources for new quiz
+    <string name="newqbim">New Quiz</string>
+    <string name="entertitle">Enter a quiz title (optional)</string>
+    <string name="ans1">Insert the first answer</string>
+    <string name="ans2">Insert the second answer</string>
+    <string name="ans3">Insert the third answer</string>
+    <string name="ans4">Insert the fourth answer</string>
+    <string name="addq">Add another question</string>
+    <string name="pub">Publish</string>
+
     
     //string resources for Rasitha
     <string name="end_quiz">Quiz Ended</string>
