@@ -4,7 +4,7 @@
     <string name="you_got">You Got:</string>
     <string name="percentage_correct"> 80% </string>
     <!--  this is a place holder for pie chart percentage  -->
-    <string name="correct"> correct </string>
+    <string name="correct_ans"> correct </string>
     <string name="contact_lecturer"> contact Lecturer </string>
     <string name="home_button"> Home </string>
 </resources>
