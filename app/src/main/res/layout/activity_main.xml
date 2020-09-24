@@ -19,45 +19,44 @@
             <RelativeLayout
                 android:id="@+id/topArea"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                >
+                android:layout_height="140dp">
 
 
                 <TextView
                     android:id="@+id/myDashboard"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="35dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
                     android:text="My Dashboard"
-                    android:textStyle="bold"
-                    android:textSize="25sp"
-                    android:layout_margin="20dp"
                     android:textColor="@android:color/white"
-                    />
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
 
 
                 <TextView
                     android:id="@+id/dashboard_adminName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/myDashboard"
                     android:layout_alignEnd="@id/myDashboard"
                     android:layout_alignParentStart="true"
-                    android:layout_marginStart="19dp"
-                    android:layout_marginTop="1dp"
+                    android:layout_marginStart="35dp"
                     android:layout_marginEnd="50dp"
-                    android:text="First Name "
+                    android:text="First Name"
+                    android:layout_below="@+id/myDashboard"
                     android:textColor="@android:color/white"
-                    android:textSize="15sp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_margin="30dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="40dp"
                     android:layout_toRightOf="@id/myDashboard"
                     android:src="@drawable/man" />
 
@@ -65,35 +64,32 @@
             </RelativeLayout>
 
             <GridLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
                 android:columnCount="2"
-                android:layout_marginTop="-80dp"
-                android:padding="5dp"
-                android:layout_marginLeft="10dp"
-                >
-
+                android:padding="5dp">
+                <!--                //Quiz-->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/quiz"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_margin="10dp"
-                    app:cardElevation="7dp"
                     app:cardCornerRadius="10dp"
-                    >
+                    app:cardElevation="7dp">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical"
                         android:layout_margin="2dp"
-                        android:padding="10dp"
-                        >
+                        android:orientation="vertical"
+                        android:padding="10dp">
 
                         <ImageView
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-                            android:src="@drawable/exam1"
                             android:layout_gravity="center_horizontal|center_vertical"
+                            android:src="@drawable/exam1"
 
                             />
 
@@ -106,31 +102,30 @@
                             android:textStyle="bold" />
                     </LinearLayout>
 
-<!--                //Quiz-->
+
                 </androidx.cardview.widget.CardView>
 
-<!--                //Acchivment-->
+                <!--                //Acchivment-->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/achivement"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_margin="10dp"
-                    app:cardElevation="7dp"
                     app:cardCornerRadius="10dp"
-                    >
+                    app:cardElevation="7dp">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical"
                         android:layout_margin="2dp"
-                        android:padding="10dp"
-                        >
+                        android:orientation="vertical"
+                        android:padding="10dp">
 
                         <ImageView
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-                            android:src="@drawable/quiz"
                             android:layout_gravity="center_horizontal|center_vertical"
+                            android:src="@drawable/quiz"
 
                             />
 
@@ -145,29 +140,27 @@
 
                 </androidx.cardview.widget.CardView>
 
-<!--                //Forum-->
+                <!--                //Forum-->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/forum"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_margin="10dp"
-                    app:cardElevation="7dp"
                     app:cardCornerRadius="10dp"
-                    >
+                    app:cardElevation="7dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical"
                         android:layout_margin="2dp"
-                        android:padding="10dp"
-                        >
+                        android:orientation="vertical"
+                        android:padding="10dp">
 
                         <ImageView
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-                            android:src="@drawable/forum"
                             android:layout_gravity="center_horizontal|center_vertical"
+                            android:src="@drawable/forum"
 
                             />
 
@@ -182,29 +175,27 @@
 
                 </androidx.cardview.widget.CardView>
 
-<!--                //Notification-->
+                <!--                //Notification-->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/notification"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_margin="10dp"
-                    app:cardElevation="7dp"
                     app:cardCornerRadius="10dp"
-                    >
+                    app:cardElevation="7dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical"
                         android:layout_margin="2dp"
-                        android:padding="10dp"
-                        >
+                        android:orientation="vertical"
+                        android:padding="10dp">
 
                         <ImageView
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-                            android:src="@drawable/bell"
                             android:layout_gravity="center_horizontal|center_vertical"
+                            android:src="@drawable/bell"
 
                             />
 
@@ -220,29 +211,27 @@
 
                 </androidx.cardview.widget.CardView>
 
-<!--                //Edit Profile-->
+                <!--                //Edit Profile-->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/edit_profile"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_margin="10dp"
-                    app:cardElevation="7dp"
                     app:cardCornerRadius="10dp"
-                    >
+                    app:cardElevation="7dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical"
                         android:layout_margin="2dp"
-                        android:padding="10dp"
-                        >
+                        android:orientation="vertical"
+                        android:padding="10dp">
 
                         <ImageView
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-                            android:src="@drawable/gear"
                             android:layout_gravity="center_horizontal|center_vertical"
+                            android:src="@drawable/gear"
 
                             />
 
@@ -257,29 +246,27 @@
 
                 </androidx.cardview.widget.CardView>
 
-<!--                //Rate Us-->
+                <!--                //Rate Us-->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/rate_us"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_margin="10dp"
-                    app:cardElevation="7dp"
                     app:cardCornerRadius="10dp"
-                    >
+                    app:cardElevation="7dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical"
                         android:layout_margin="2dp"
-                        android:padding="10dp"
-                        >
+                        android:orientation="vertical"
+                        android:padding="10dp">
 
                         <ImageView
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-                            android:src="@drawable/like"
                             android:layout_gravity="center_horizontal|center_vertical"
+                            android:src="@drawable/like"
 
                             />
 
