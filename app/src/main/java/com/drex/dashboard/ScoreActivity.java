@@ -1,7 +1,6 @@
 package com.drex.dashboard;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
 public class ScoreActivity extends AppCompatActivity {
