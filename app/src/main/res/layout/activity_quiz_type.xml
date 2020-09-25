@@ -35,7 +35,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/type1"
+                android:id="@+id/qCount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
@@ -46,7 +46,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/type2"
+                android:id="@+id/timer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
@@ -59,9 +59,9 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="0dp"
-                android:layout_toStartOf="@+id/type2"
                 android:layout_marginTop="3dp"
+                android:layout_marginEnd="0dp"
+                android:layout_toStartOf="@+id/timer"
                 app:srcCompat="@android:drawable/ic_menu_recent_history">
 
 
@@ -69,16 +69,80 @@
 
         </RelativeLayout>
 
+
+
+
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        >
+        android:layout_width="wrap_content"
+        android:orientation="horizontal">
 
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radius"
+            android:padding="10dp"
+            android:textSize="15dp"
+            android:text="@string/lorem_ipsum"
+            android:layout_margin="25dp">
 
+        </TextView>
+    </LinearLayout>
 
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="200dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:gravity="center_vertical|center_horizontal">
 
+        <Button
+            android:id="@+id/option1"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/radius"
+            android:backgroundTint="#B3D1EC"
+            android:text="option1">
+
+        </Button>
+
+        <Button
+            android:id="@+id/option2"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/radius"
+            android:backgroundTint="#B3D1EC"
+            android:text="option2">
+
+        </Button>
+
+        <Button
+            android:id="@+id/option3"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/radius"
+            android:backgroundTint="#B3D1EC"
+            android:text="option3">
+
+        </Button>
+
+        <Button
+            android:id="@+id/option4"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/radius"
+            android:backgroundTint="#B3D1EC"
+            android:text="option4">
+
+        </Button>
     </LinearLayout>
 
 
@@ -125,76 +189,8 @@
 
 
 
-<!--    <TextView-->
-<!--        android:id="@+id/type"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="32dp"-->
-<!--        android:text="@string/java_quiz"-->
-<!--        android:textSize="25sp"-->
-<!--        android:textStyle="bold"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
-<!--    <TextView-->
-<!--        android:id="@+id/textView2"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginStart="16dp"-->
-<!--        android:text="21"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.147" />-->
 
-<!--    <TextView-->
-<!--        android:id="@+id/textView4"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginStart="32dp"-->
-<!--        android:text="| 50"-->
-<!--        android:textStyle="bold"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.147" />-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/textView3"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginEnd="25sp"-->
-<!--        android:text="21.46"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.147" />-->
-
-<!--    <ImageView-->
-<!--        android:id="@+id/imageView"-->
-<!--        android:layout_width="21dp"-->
-<!--        android:layout_height="22dp"-->
-<!--        android:layout_marginEnd="60dp"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.143"-->
-<!--        app:srcCompat="@android:drawable/ic_menu_recent_history" />-->
-
-<!--    <TextView-->
-<!--        android:layout_width="335dp"-->
-<!--        android:layout_height="200dp"-->
-<!--        android:layout_marginTop="156dp"-->
-<!--        android:background="@drawable/radius"-->
-<!--        android:padding="22dp"-->
-<!--        android:text="@string/lorem_ipsum"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.516"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent">-->
-
-<!--    </TextView>-->
 
 
 <!--    <TextView-->

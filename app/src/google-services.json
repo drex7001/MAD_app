@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "592137403177",
+    "firebase_url": "https://madquiz-d8cd9.firebaseio.com",
+    "project_id": "madquiz-d8cd9",
+    "storage_bucket": "madquiz-d8cd9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592137403177:android:b45b42a5b3a9078e3bd538",
+        "android_client_info": {
+          "package_name": "com.drex.dashboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592137403177-or34bf9pk77l5dbpcfpgmqur4utvssoi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpb051HSLoy3g1QuwQUL_T-YjR5z4qs48"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592137403177-or34bf9pk77l5dbpcfpgmqur4utvssoi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
