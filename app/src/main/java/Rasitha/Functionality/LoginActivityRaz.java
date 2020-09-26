@@ -18,6 +18,8 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.rengwuxian.materialedittext.MaterialEditText;
 
+import Drex.Funcionality.MainActivity;
+
 public class LoginActivityRaz extends AppCompatActivity {
 
     MaterialEditText email, password;
@@ -54,7 +56,7 @@ public class LoginActivityRaz extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if(task.isSuccessful()){
-                                Intent intent =new Intent(LoginActivityRaz.this, ChooseComponentActivityRaz.class);
+                                Intent intent =new Intent(LoginActivityRaz.this, MainActivity.class);
                                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK| Intent.FLAG_ACTIVITY_NEW_TASK);
                                 startActivity(intent);
                                 finish();

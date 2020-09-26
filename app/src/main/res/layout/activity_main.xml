@@ -7,6 +7,36 @@
     android:background="@drawable/bg"
     android:orientation="vertical"
     >
+    <com.google.android.material.appbar.AppBarLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/MenuStyle">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/profile_image"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/appbar_username"
+                android:layout_marginLeft="25dp"
+
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -16,52 +46,58 @@
             android:orientation="vertical">
 
 
-            <RelativeLayout
-                android:id="@+id/topArea"
-                android:layout_width="match_parent"
-                android:layout_height="140dp">
+            <!--
+                        <include
+                            android:id="@+id/toolbar"
+                            layout="@layout/bar_layout_
+                            />
+
+                        <RelativeLayout
+                            android:id="@+id/topArea"
+                            android:layout_width="match_parent"
+                            android:layout_height="140dp">
 
 
-                <TextView
-                    android:id="@+id/myDashboard"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_margin="35dp"
-                    android:layout_marginStart="35dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:layout_marginBottom="20dp"
-                    android:text="My Dashboard"
-                    android:textColor="@android:color/white"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/myDashboard"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_margin="35dp"
+                                android:layout_marginStart="35dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:text="My Dashboard"
+                                android:textColor="@android:color/white"
+                                android:textSize="25sp"
+                                android:textStyle="bold" />
 
 
-                <TextView
-                    android:id="@+id/dashboard_adminName"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignEnd="@id/myDashboard"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginStart="35dp"
-                    android:layout_marginEnd="50dp"
-                    android:text="First Name"
-                    android:layout_below="@+id/myDashboard"
-                    android:textColor="@android:color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/dashboard_adminName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignEnd="@id/myDashboard"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="35dp"
+                                android:layout_marginEnd="50dp"
+                                android:text="First Name"
+                                android:layout_below="@+id/myDashboard"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
 
-                <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_marginStart="30dp"
-                    android:layout_marginTop="40dp"
-                    android:layout_toRightOf="@id/myDashboard"
-                    android:src="@drawable/man" />
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="40dp"
+                                android:layout_toRightOf="@id/myDashboard"
+                                android:src="@drawable/man" />
 
 
-            </RelativeLayout>
+                        </RelativeLayout>-->
 
             <GridLayout
                 android:layout_width="wrap_content"

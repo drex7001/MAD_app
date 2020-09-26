@@ -4,11 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="Rasitha.Functionality.RegisterActivityRaz">
+    tools:context="Rasitha.Functionality.RegisterActivityRaz"
+    android:background="@drawable/bg">
     <include
         android:id="@+id/toolbar"
         layout="@layout/bar_layout_raz"/>
     <LinearLayout
+        android:layout_marginTop="50dp"
         android:layout_width="match_parent"
         android:orientation="vertical"
         android:layout_height="wrap_content"
@@ -17,18 +19,19 @@
         android:padding="16dp">
 
         <TextView
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Create a new account"
-            android:textSize="20sp"
+            android:textSize="30sp"
             android:textStyle="bold"
             android:textColor="@color/colorPrimaryDark"/>
 
         <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_marginTop="60dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/username"
-            android:layout_marginTop="10dp"
             app:met_floatingLabel="normal"
             android:hint="Username"/>
 
