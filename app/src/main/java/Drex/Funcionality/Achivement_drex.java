@@ -1,8 +1,10 @@
-package com.drex.dashboard;
+package Drex.Funcionality;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.drex.dashboard.R;
 
 public class Achivement_drex extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.drex.dashboard;
+package Drex.Funcionality;
 
 public class Question {
     String question;

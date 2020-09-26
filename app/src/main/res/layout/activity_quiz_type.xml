@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Quiz_type">
+    tools:context="Drex.Funcionality.Quiz_type">
 
     <LinearLayout
         android:layout_width="match_parent"

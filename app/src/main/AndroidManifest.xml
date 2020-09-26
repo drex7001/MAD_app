@@ -21,7 +21,7 @@
         </activity>
         <activity android:name="Rasitha.Functionality.RegisterActivityRaz"
             android:parentActivityName="Rasitha.Functionality.StartActivityRaz"/>
-        <activity android:name=".ScoreActivity" />
+        <activity android:name="Drex.Funcionality.ScoreActivity" />
         <activity android:name=".Messages_Reply_Interface_Raz">
             <intent-filter>
                 <action android:name="com.company.package.FOO" />
@@ -78,21 +78,21 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".Achivement_drex">
+        <activity android:name="Drex.Funcionality.Achivement_drex">
             <intent-filter>
                 <action android:name="com.company.package.FOO" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".Std_profile_drex">
+        <activity android:name="Drex.Funcionality.Std_profile_drex">
             <intent-filter>
                 <action android:name="com.company.package.FOO" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".Quiz_type">
+        <activity android:name="Drex.Funcionality.Quiz_type">
             <intent-filter>
                 <action android:name="com.company.package.FOO" />
 
@@ -100,7 +100,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Quiz_drex"
+            android:name="Drex.Funcionality.Quiz_drex"
             android:label="@string/title_activity_quiz_drex"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -109,7 +109,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name="Drex.Funcionality.MainActivity">
 
         </activity>
         <activity android:name=".leaderboard_student_msg">

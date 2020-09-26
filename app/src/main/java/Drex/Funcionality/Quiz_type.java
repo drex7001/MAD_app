@@ -1,4 +1,4 @@
-package com.drex.dashboard;
+package Drex.Funcionality;
 
 import android.animation.Animator;
 import android.content.Intent;
@@ -10,20 +10,21 @@ import android.os.Handler;
 import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.Button;
-import android.widget.Switch;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.AbstractList;
+import com.drex.dashboard.R;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Quiz_type extends AppCompatActivity implements View.OnClickListener{
 
-    private TextView question,qCount,timer;
+    private TextView question,qCount,timer,quiz_category;
     private Button option1,option2,option3,option4;
     private List<Question> questionList;
+    private int score;
     int quesNum;
     private CountDownTimer countDown;
     @Override
@@ -47,6 +48,7 @@ public class Quiz_type extends AppCompatActivity implements View.OnClickListener
 
         getQuestionsList();
         quesNum = 0;
+        score = 0;
     }
 
     private void getQuestionsList(){
@@ -122,6 +124,7 @@ public class Quiz_type extends AppCompatActivity implements View.OnClickListener
         if(selectedOption == questionList.get(quesNum).getCorrectAns()){
             //Right answer
             ((Button)view).setBackgroundTintList(ColorStateList.valueOf(Color.GREEN));
+            score ++;
         }
         else{
             //Wrong answer
@@ -167,8 +170,10 @@ public class Quiz_type extends AppCompatActivity implements View.OnClickListener
         else{
             //goto score activity
             Intent intent = new Intent(Quiz_type.this,ScoreActivity.class);
+            intent.putExtra("SCORE",String.valueOf(score) + " | " + String.valueOf(questionList.size()));
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
-            Quiz_type.this.finish();
+            //Quiz_type.this.finish();
         }
     }
 
@@ -220,5 +225,11 @@ public class Quiz_type extends AppCompatActivity implements View.OnClickListener
 
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        countDown.cancel();
     }
 }
