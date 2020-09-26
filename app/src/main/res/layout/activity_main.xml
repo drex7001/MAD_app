@@ -29,8 +29,9 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/appbar_username"
                 android:layout_marginLeft="25dp"
+                android:textSize="20sp"
+                android:elevation="10sp"
 
-                android:textColor="#fff"
                 android:textStyle="bold"/>
 
         </androidx.appcompat.widget.Toolbar>

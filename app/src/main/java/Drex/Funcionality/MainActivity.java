@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.drex.dashboard.R;
@@ -64,19 +65,20 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("");
 
         profile_image = findViewById(R.id.profile_image);
-        username =findViewById(R.id.appbar_username);
+        username = findViewById(R.id.appbar_username);
 
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         reference = FirebaseDatabase.getInstance().getReference("Users").child(firebaseUser.getUid());
 
         reference.addValueEventListener(new ValueEventListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot)  {
                 User user = dataSnapshot.getValue(User.class);
-                username.setText(user.getUserName());
+                username.setText(user.getUsername());
+                Toast.makeText(getApplicationContext(),"Already logged in as "+user.getUsername(),Toast.LENGTH_LONG).show();
 
                 if(user.getImageURL().equals("default")){
-                    profile_image.setImageResource(R.mipmap.ic_launcher);
+                    profile_image.setImageResource(R.drawable.businessman);
                 }else{
                     Glide.with(MainActivity.this).load(user.getImageURL()).into(profile_image);
                 }
