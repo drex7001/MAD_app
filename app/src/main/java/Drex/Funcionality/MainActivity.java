@@ -23,6 +23,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import Rasitha.Functionality.ChooseComponentActivityRaz;
+import Rasitha.Functionality.ForumChatMainActivityRaz;
 import Rasitha.Functionality.Model.User;
 import Rasitha.Functionality.StartActivityRaz;
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -97,6 +99,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,Quiz_type.class);
+                intent.putExtra("lay_quiz",String.valueOf(txt_quiz));
+                //intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intent);
+                //Quiz_type.this.finish();
+            }
+        });
+
+        lay_forum.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ForumChatMainActivityRaz.class);
                 intent.putExtra("lay_quiz",String.valueOf(txt_quiz));
                 //intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
