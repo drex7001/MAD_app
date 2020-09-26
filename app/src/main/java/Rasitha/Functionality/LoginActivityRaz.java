@@ -58,8 +58,9 @@ public class LoginActivityRaz extends AppCompatActivity {
                                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK| Intent.FLAG_ACTIVITY_NEW_TASK);
                                 startActivity(intent);
                                 finish();
-                            }else {}
-                            Toast.makeText(LoginActivityRaz.this, "Failed to Authenticate", Toast.LENGTH_SHORT).show();
+                            }else {
+                                Toast.makeText(LoginActivityRaz.this, "Failed to Authenticate", Toast.LENGTH_SHORT).show();
+                            }
                         }
                     });
                 }
