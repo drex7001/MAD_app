@@ -50,14 +50,14 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".notifications">
+        <activity android:name="com.drex.dashboard.notifications">
             <intent-filter>
                 <action android:name="com.company.package.FOO" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".myquizzes">
+        <activity android:name="com.drex.dashboard.myquizzes">
             <intent-filter>
                 <action android:name="com.company.package.FOO" />
 
@@ -71,7 +71,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".new_quiz">
+        <activity android:name=".new_quiz_bim">
             <intent-filter>
                 <action android:name="com.company.package.FOO" />
 
