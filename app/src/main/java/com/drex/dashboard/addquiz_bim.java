@@ -17,6 +17,8 @@ import com.google.firebase.database.ValueEventListener;
 
 public class addquiz_bim extends AppCompatActivity {
 
+    //test
+
     EditText q1title,q1answer1,q1answer2,q1answer3,q1answer4,q1answer5,
              q2title,q2answer1,q2answer2,q2answer3,q2answer4,q2answer5,
              q3title,q3answer1,q3answer2,q3answer3,q3answer4,q3answer5,
