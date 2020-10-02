@@ -42,7 +42,7 @@ public class CategoryActivity extends AppCompatActivity {
         lay_java.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CategoryActivity.this, QuizActivity.class);
+                Intent intent = new Intent(CategoryActivity.this, SetsActivity.class);
                 intent.putExtra("lay_java",String.valueOf(txt_java));
                 //intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);

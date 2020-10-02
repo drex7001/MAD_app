@@ -30,7 +30,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz_type);
+        setContentView(R.layout.activity_quiz);
 
         question = findViewById(R.id.question);
         qCount = findViewById(R.id.qCount);
@@ -149,7 +149,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
             public void run(){
                 changeQuestion();
             }
-        },2000);
+        },1500);
 
     }
 
