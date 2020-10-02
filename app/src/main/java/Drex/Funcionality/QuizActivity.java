@@ -19,7 +19,7 @@ import com.drex.dashboard.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Quiz_type extends AppCompatActivity implements View.OnClickListener{
+public class QuizActivity extends AppCompatActivity implements View.OnClickListener{
 
     private TextView question,qCount,timer,quiz_category;
     private Button option1,option2,option3,option4;
@@ -169,11 +169,11 @@ public class Quiz_type extends AppCompatActivity implements View.OnClickListener
         }
         else{
             //goto score activity
-            Intent intent = new Intent(Quiz_type.this,ScoreActivity.class);
+            Intent intent = new Intent(QuizActivity.this,ScoreActivity.class);
             intent.putExtra("SCORE",String.valueOf(score) + " | " + String.valueOf(questionList.size()));
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
-            //Quiz_type.this.finish();
+            //QuizActivity.this.finish();
         }
     }
 

@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="Rasitha.Functionality.ForumChatMainActivityRaz"></activity>
+        <activity android:name="Drex.Funcionality.SetsActivity"></activity>
+        <activity android:name="Drex.Funcionality.CategoryActivity" />
+        <activity android:name="Rasitha.Functionality.ForumChatMainActivityRaz" />
         <activity android:name="Rasitha.Functionality.ChooseComponentActivityRaz" />
         <activity
             android:name="Rasitha.Functionality.LoginActivityRaz"
@@ -95,7 +97,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="Drex.Funcionality.Quiz_type">
+        <activity android:name="Drex.Funcionality.QuizActivity">
             <intent-filter>
                 <action android:name="com.company.package.FOO" />
 
@@ -112,7 +114,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="Drex.Funcionality.MainActivity"></activity>
+        <activity android:name="Drex.Funcionality.MainActivity" />
         <activity android:name=".leaderboard_student_msg">
             <intent-filter>
                 <action android:name="com.company.package.FOO" />
