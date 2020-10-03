@@ -65,7 +65,10 @@ public class SetsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(SetsActivity.this, QuizActivity.class);
-                intent.putExtra("lay_java",String.valueOf(txt_beginner));
+                Bundle extras = new Bundle();
+                extras.putString("name",st);
+                extras.putString("type",intermediate);
+                intent.putExtras(extras);
                 startActivity(intent);
             }
         });
@@ -74,7 +77,10 @@ public class SetsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(SetsActivity.this, QuizActivity.class);
-                intent.putExtra("lay_java",String.valueOf(txt_beginner));
+                Bundle extras = new Bundle();
+                extras.putString("name",st);
+                extras.putString("type",expert);
+                intent.putExtras(extras);
                 startActivity(intent);
             }
         });

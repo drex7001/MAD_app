@@ -75,9 +75,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
        // LoadingDialog.show();
 
         name = getIntent().getExtras().getString("name");
-        name.toLowerCase();
-        type = getIntent().getExtras().getString("name");
-        type.toLowerCase();
+        type = getIntent().getExtras().getString("type");
 
         firestore = FirebaseFirestore.getInstance();
 
@@ -88,14 +86,14 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
 
     private void getQuestionsList(){
         questionList = new ArrayList<>();
-        DatabaseReference reference = FirebaseDatabase.getInstance().getReference().child("question/java/beginner");
+        DatabaseReference reference = FirebaseDatabase.getInstance().getReference().child("question"+"/"+name.toLowerCase()+"/"+type.toLowerCase());
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 questionList.clear();
                 for(DataSnapshot snapshot : dataSnapshot.getChildren()){
-                    questionList.add(new Question(snapshot.getValue().toString(), "ds", "d", "sd", "sd", 2));
-                    Toast.makeText(QuizActivity.this,"aaa",Toast.LENGTH_LONG);
+                    questionList.add(new Question(snapshot.child("question").getValue(String.class), snapshot.child("optionA").getValue(String.class), snapshot.child("optionB").getValue(String.class), snapshot.child("optionC").getValue(String.class), snapshot.child("optionD").getValue(String.class), snapshot.child("correctAns").getValue(Integer.class)));
+                    //Toast.makeText(QuizActivity.this,"aaa",Toast.LENGTH_LONG);
                 }
                 setQuestion();
             }
@@ -133,8 +131,6 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
 //        questionList.add(new Question("Question 3","A","B","C","D",3));
 //        questionList.add(new Question("Question 4","A","B","C","D",4));
 //        questionList.add(new Question("Question 5","A","B","C","D",4));
-
-
     }
 
     public void setQuestion(){
