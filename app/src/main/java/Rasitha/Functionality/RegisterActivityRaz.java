@@ -42,7 +42,7 @@ public class RegisterActivityRaz extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         username =findViewById(R.id.username);
-        email = findViewById(R.id.email);
+        email = findViewById(R.id.emailraz);
         password = findViewById(R.id.password);
         btn_register =findViewById(R.id.btn_register);
 
@@ -52,7 +52,7 @@ public class RegisterActivityRaz extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String txt_username =username.getText().toString();
-                String txt_email =email.getText().toString();
+                String txt_email = email.getText().toString();
                 String txt_password =password.getText().toString();
 
                 if(TextUtils.isEmpty(txt_username)||TextUtils.isEmpty(txt_email)||TextUtils.isEmpty(txt_password)){
@@ -85,7 +85,6 @@ public class RegisterActivityRaz extends AppCompatActivity {
                             hashMap.put("id", userid);
                             hashMap.put("username", username);
                             hashMap.put("imageURL", "default");
-
 
                             reference.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override
