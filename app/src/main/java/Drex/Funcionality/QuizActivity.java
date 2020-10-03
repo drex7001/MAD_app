@@ -22,6 +22,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.drex.dashboard.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
@@ -42,6 +47,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
     private int setNo;
     private Dialog LoadingDialog;
     String name,type;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -82,30 +88,46 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
 
     private void getQuestionsList(){
         questionList = new ArrayList<>();
-
-        firestore.collection("question").document("java").collection("beginner")
-                .get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+        DatabaseReference reference = FirebaseDatabase.getInstance().getReference().child("question/java/beginner");
+        reference.addValueEventListener(new ValueEventListener() {
             @Override
-            public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                if(task.isSuccessful()) {
-                    QuerySnapshot questions = task.getResult();
-                    Log.d("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", String.valueOf(questions.size()));
-                    for (QueryDocumentSnapshot doc : questions) {
-                        questionList.add(new Question(doc.getString("question"),
-                                doc.getString("a"),
-                                doc.getString("b"),
-                                doc.getString("c"),
-                                doc.getString("d"),
-                                Integer.valueOf(doc.getString("answer"))
-                        ));
-                    }
-                    setQuestion();
-                }else{
-                    Toast.makeText(QuizActivity.this,task.getException().getMessage(),Toast.LENGTH_LONG).show();
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                questionList.clear();
+                for(DataSnapshot snapshot : dataSnapshot.getChildren()){
+                    questionList.add(new Question(snapshot.getValue().toString(), "d", "d", "sd", "sd", 2));
+                    Toast.makeText(QuizActivity.this,"aaa",Toast.LENGTH_LONG);
                 }
-               // LoadingDialog.cancel();
+                setQuestion();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
             }
         });
+//        firestore.collection("question").document("java").collection("beginner")
+//                .get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+//            @Override
+//            public void onComplete(@NonNull Task<QuerySnapshot> task) {
+//                if(task.isSuccessful()) {
+//                    QuerySnapshot questions = task.getResult();
+//                    Log.d("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", String.valueOf(questions.size()));
+//                    for (QueryDocumentSnapshot doc : questions) {
+//                        questionList.add(new Question(doc.getString("question"),
+//                                doc.getString("a"),
+//                                doc.getString("b"),
+//                                doc.getString("c"),
+//                                doc.getString("d"),
+//                                Integer.valueOf(doc.getString("answer"))
+//                        ));
+//                    }
+//                    setQuestion();
+//                }else{
+//                    Toast.makeText(QuizActivity.this,task.getException().getMessage(),Toast.LENGTH_LONG).show();
+//                }
+//               // LoadingDialog.cancel();
+//            }
+//        });
 //        questionList.add(new Question("Question 1","A","B","C","D",1));
 //        questionList.add(new Question("Question 2","A","B","C","D",2));
 //        questionList.add(new Question("Question 3","A","B","C","D",3));
