@@ -40,6 +40,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class ForumChatMainActivityRaz extends AppCompatActivity {
 
+    //appbar variables
     CircleImageView profile_image;
     TextView username;
 
@@ -50,6 +51,7 @@ public class ForumChatMainActivityRaz extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forum_chat_main_raz);
+        //appbar
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("");
@@ -65,7 +67,7 @@ public class ForumChatMainActivityRaz extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot)  {
                 User user = dataSnapshot.getValue(User.class);
                 username.setText(user.getUsername());
-               // Toast.makeText(getApplicationContext(),"Already logged in as "+user.getUsername(),Toast.LENGTH_LONG).show();
+
 
                 if(user.getImageURL().equals("default")){
                     profile_image.setImageResource(R.drawable.businessman);

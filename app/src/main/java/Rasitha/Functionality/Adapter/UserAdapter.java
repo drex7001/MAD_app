@@ -1,6 +1,7 @@
 package Rasitha.Functionality.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +16,7 @@ import com.drex.dashboard.R;
 
 import java.util.List;
 
+import Rasitha.Functionality.MessageActivity;
 import Rasitha.Functionality.Model.User;
 
 public class UserAdapter extends RecyclerView.Adapter {
@@ -37,7 +39,7 @@ public class UserAdapter extends RecyclerView.Adapter {
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         ViewHolder myHolder = (ViewHolder) holder;
-        User user = mUsers.get(position);
+        final User user = mUsers.get(position);
         myHolder.username.setText(user.getUsername());
         if(user.getImageURL().equals("default")){
             myHolder.profile_image.setImageResource(R.mipmap.ic_launcher);
@@ -45,6 +47,16 @@ public class UserAdapter extends RecyclerView.Adapter {
             Glide.with(mContext).load(user.getImageURL()).into(myHolder.profile_image);
         }
 
+        myHolder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mContext, MessageActivity.class);
+                intent.putExtra("userid",user.getId());
+
+                mContext.startActivity(intent);
+
+            }
+        });
     }
 
     @Override

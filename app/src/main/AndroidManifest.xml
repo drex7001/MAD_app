@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.drex.dashboard">
+    package="com.drex.dashboard" >
 
     <application
         android:allowBackup="true"
@@ -8,93 +8,91 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name="Drex.Funcionality.SetsActivity"></activity>
+        android:theme="@style/AppTheme" >
+        <activity android:name="Rasitha.Functionality.MessageActivity" >
+        </activity>
+        <activity android:name="Drex.Funcionality.SetsActivity" />
         <activity android:name="Drex.Funcionality.CategoryActivity" />
         <activity android:name="Rasitha.Functionality.ForumChatMainActivityRaz" />
         <activity android:name="Rasitha.Functionality.ChooseComponentActivityRaz" />
         <activity
             android:name="Rasitha.Functionality.LoginActivityRaz"
             android:parentActivityName="Rasitha.Functionality.StartActivityRaz" />
-        <activity android:name="Rasitha.Functionality.StartActivityRaz">
+        <activity android:name="Rasitha.Functionality.StartActivityRaz" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name="Rasitha.Functionality.RegisterActivityRaz"
             android:parentActivityName="Rasitha.Functionality.StartActivityRaz" />
         <activity android:name="Drex.Funcionality.ScoreActivity" />
-        <activity android:name=".Messages_Reply_Interface_Raz">
+        <activity android:name=".Messages_Reply_Interface_Raz" >
             <intent-filter>
                 <action android:name="com.company.package.FOO" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".Mesages_Interface_Raz">
+        <activity android:name=".Mesages_Interface_Raz" >
             <intent-filter>
                 <action android:name="com.company.package.FOO" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".Contact_Lecturer_Interface_Raz">
+        <activity android:name=".Contact_Lecturer_Interface_Raz" >
             <intent-filter>
                 <action android:name="com.company.package.FOO" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".Quiz_End_Interface_Raz">
+        <activity android:name=".Quiz_End_Interface_Raz" >
             <intent-filter>
                 <action android:name="com.company.package.FOO" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".notifications">
+        <activity android:name=".notifications" >
             <intent-filter>
                 <action android:name="com.company.package.FOO" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".teacherview">
+        <activity android:name=".teacherview" >
             <intent-filter>
                 <action android:name="com.company.package.FOO" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".addquiz_bim">
+        <activity android:name=".addquiz_bim" >
             <intent-filter>
                 <action android:name="com.company.package.FOO" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
-        <activity android:name="Drex.Funcionality.Achivement_drex">
+        <activity android:name="Drex.Funcionality.Achivement_drex" >
             <intent-filter>
                 <action android:name="com.company.package.FOO" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="Drex.Funcionality.Std_profile_drex">
+        <activity android:name="Drex.Funcionality.Std_profile_drex" >
             <intent-filter>
                 <action android:name="com.company.package.FOO" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="Drex.Funcionality.QuizActivity">
+        <activity android:name="Drex.Funcionality.QuizActivity" >
             <intent-filter>
                 <action android:name="com.company.package.FOO" />
 
@@ -104,7 +102,7 @@
         <activity
             android:name="Drex.Funcionality.Quiz_drex"
             android:label="@string/title_activity_quiz_drex"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="com.company.package.FOO" />
 
@@ -112,28 +110,28 @@
             </intent-filter>
         </activity>
         <activity android:name="Drex.Funcionality.MainActivity" />
-        <activity android:name=".leaderboard_student_msg">
+        <activity android:name=".leaderboard_student_msg" >
             <intent-filter>
                 <action android:name="com.company.package.FOO" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".leaderboard_student_inbox">
+        <activity android:name=".leaderboard_student_inbox" >
             <intent-filter>
                 <action android:name="com.company.package.FOO" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".leaderboard_grid_sav">
+        <activity android:name=".leaderboard_grid_sav" >
             <intent-filter>
                 <action android:name="com.company.package.FOO" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".leaderboard_sav">
+        <activity android:name=".leaderboard_sav" >
             <intent-filter>
                 <action android:name="com.company.package.FOO" />
 

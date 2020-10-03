@@ -17,7 +17,8 @@
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
      <style name="MenuStyle" Parent ="Theme.AppCompat.Light">
-         <item name= "android:background">@color/colorPrimary</item>
+         <item name= "android:background">@color/white1</item>
+         <item name="android:textColor">@color/colorPrimary</item>
      </style>
 
 </resources>
