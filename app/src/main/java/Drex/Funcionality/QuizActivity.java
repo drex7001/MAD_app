@@ -94,7 +94,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 questionList.clear();
                 for(DataSnapshot snapshot : dataSnapshot.getChildren()){
-                    questionList.add(new Question(snapshot.getValue().toString(), "d", "d", "sd", "sd", 2));
+                    questionList.add(new Question(snapshot.getValue().toString(), "ds", "d", "sd", "sd", 2));
                     Toast.makeText(QuizActivity.this,"aaa",Toast.LENGTH_LONG);
                 }
                 setQuestion();
