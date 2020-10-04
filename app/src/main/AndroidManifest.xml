@@ -72,7 +72,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="Bimsara.Functionality.quizactivity">
+        <activity android:name="Bimsara.Functionality.addquiz">
             <intent-filter>
                 <action android:name="com.company.package.FOO" />
 
