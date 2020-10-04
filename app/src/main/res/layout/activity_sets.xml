@@ -141,7 +141,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/txt_beginner_2"
-                    android:text="How to use Java"
+                    android:text="For Intermedial"
                     android:textSize="10dp"
                     app:layout_constraintStart_toStartOf="parent"
                     tools:layout_editor_absoluteY="0dp">
