@@ -31,7 +31,7 @@ public class Std_profile_drex extends AppCompatActivity {
     private FirebaseAuth firebaseAuth;
     private  FirebaseDatabase firebaseDatabase;
     private List<Question> userdata;
-    String username,l_name,f_name,mobile;
+    String id,l_name,f_name,mobile,imageURL;
 
     FirebaseDatabase rootNode;
     DatabaseReference reference;
@@ -60,12 +60,13 @@ public class Std_profile_drex extends AppCompatActivity {
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                //username = dataSnapshot.child("username").getValue(String.class);
+                id = dataSnapshot.child("id").getValue(String.class);
                 f_name = dataSnapshot.child("f_name").getValue(String.class);
                 l_name = dataSnapshot.child("l_name").getValue(String.class);
                 mobile = dataSnapshot.child("mobile").getValue(String.class);
+                imageURL = dataSnapshot.child("imageURL").getValue(String.class);
 
-                userprofile userprofile = new userprofile(f_name,l_name,mobile);
+                userprofile userprofile = new userprofile(f_name,l_name,mobile,id,imageURL);
                 //userprofile userprofile = dataSnapshot.getValue(userprofile.class);
                 newf_name.setText(f_name);
                 newmobile.setText(l_name);
@@ -83,12 +84,15 @@ public class Std_profile_drex extends AppCompatActivity {
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String aid = id;
                 String fname = newf_name.getText().toString();
                 String lname = newmobile.getText().toString();
                 String mobile = newl_name.getText().toString();
+                String aimageURL = imageURL;
+
                 //String password=newpassword.getText().toString();
 
-                userprofile Userprofile = new userprofile(fname,lname,mobile);
+                userprofile Userprofile = new userprofile(fname,lname,mobile,aid,aimageURL);
 
                 reference.setValue(Userprofile);
                 //startActivity(new Intent(Std_profile_drex.this,search.class));

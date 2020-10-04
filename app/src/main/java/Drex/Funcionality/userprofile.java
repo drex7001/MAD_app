@@ -5,14 +5,16 @@ public class userprofile {
     public String f_name;
     public  String l_name;
     public String mobile;
-    public String password;
+    public String id;
+    private  String imageURL;
 
-
-    public userprofile(String f_name, String l_name, String mobile/*, String userPassword*/) {
+    public userprofile(String f_name, String l_name, String mobile, String id,String imageURL) {
         this.f_name = f_name;
         this.l_name = l_name;
         this.mobile = mobile;
-       // this.password = userPassword;
+        this.id = id;
+        this.imageURL = imageURL;
+
     }
 
     public String getUsername() {
@@ -39,11 +41,19 @@ public class userprofile {
         this.mobile = mobile;
     }
 
-//    public String getUserPassword() {
-//        return password;
-//    }
-//
-//    public void setUserPassword(String userPassword) {
-//        this.password = userPassword;
-//    }
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getImageURL() {
+        return imageURL;
+    }
+
+    public void setImageURL(String imageURL) {
+        this.imageURL = imageURL;
+    }
 }

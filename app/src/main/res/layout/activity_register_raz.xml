@@ -58,7 +58,6 @@
             android:layout_height="wrap_content"
             android:id="@+id/f_name"
             android:layout_marginTop="10dp"
-            android:inputType="textPassword"
             app:met_floatingLabel="normal"
             android:hint="First Name"/>
 
@@ -67,7 +66,6 @@
             android:layout_height="wrap_content"
             android:id="@+id/l_name"
             android:layout_marginTop="10dp"
-            android:inputType="textPassword"
             app:met_floatingLabel="normal"
             android:hint="Last Name"/>
 
@@ -76,7 +74,6 @@
             android:layout_height="wrap_content"
             android:id="@+id/mobile"
             android:layout_marginTop="10dp"
-            android:inputType="textPassword"
             app:met_floatingLabel="normal"
             android:hint="Mobile"/>
         
