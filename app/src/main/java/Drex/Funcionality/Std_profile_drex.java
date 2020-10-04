@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,6 +28,7 @@ public class Std_profile_drex extends AppCompatActivity {
 
     private EditText newf_name,newl_name,newmobile/*,newpassword*/;
     //private TextView newUsereemail,newpassword;
+    private ImageView imageView;
     private Button save;
     private FirebaseAuth firebaseAuth;
     private  FirebaseDatabase firebaseDatabase;
@@ -40,6 +42,8 @@ public class Std_profile_drex extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_std_profile_drex);
+
+        imageView = findViewById(R.id.back_button0);
 
         newf_name = findViewById(R.id.upname1);
         newmobile = findViewById(R.id.upemail1);
@@ -98,6 +102,13 @@ public class Std_profile_drex extends AppCompatActivity {
                 //startActivity(new Intent(Std_profile_drex.this,search.class));
                 finish();
                 Toast.makeText(Std_profile_drex.this,"Profile updated",Toast.LENGTH_SHORT ).show();
+            }
+        });
+
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
             }
         });
        /* save.setOnClickListener(new View.OnClickListener() {

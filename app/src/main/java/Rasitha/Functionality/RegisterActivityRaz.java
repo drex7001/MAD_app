@@ -83,7 +83,7 @@ public class RegisterActivityRaz extends AppCompatActivity {
                         if(task.isSuccessful()){
                             FirebaseUser firebaseUser = auth.getCurrentUser();
                             assert firebaseUser != null;
-                            String userid =firebaseUser.getUid();
+                            String userid = firebaseUser.getUid();
 
                             reference= FirebaseDatabase.getInstance().getReference("Users").child(userid);
 
