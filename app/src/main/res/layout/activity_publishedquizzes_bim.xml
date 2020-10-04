@@ -7,190 +7,24 @@
     android:background="@drawable/bg"
     tools:context="com.drex.dashboard.myquizzes">
 
-    <ImageButton
-        android:id="@+id/deleteq7"
-        android:layout_width="43dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="309dp"
-        android:layout_marginTop="633dp"
-        android:layout_marginBottom="62dp"
-        android:background="#6A1B9A"
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="445dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_delete" />
+        app:layout_constraintStart_toStartOf="parent">
 
-    <ImageButton
-        android:id="@+id/deleteq6"
-        android:layout_width="43dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="309dp"
-        android:layout_marginTop="588dp"
-        android:layout_marginBottom="107dp"
-        android:background="#6A1B9A"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_delete" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/quiz_list_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
-    <ImageButton
-        android:id="@+id/deleteq5"
-        android:layout_width="43dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="309dp"
-        android:layout_marginTop="542dp"
-        android:layout_marginBottom="153dp"
-        android:background="#6A1B9A"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_delete" />
-
-    <ImageButton
-        android:id="@+id/deleteq4"
-        android:layout_width="43dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="309dp"
-        android:layout_marginTop="416dp"
-        android:layout_marginBottom="279dp"
-        android:background="#6A1B9A"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_delete" />
-
-    <ImageButton
-        android:id="@+id/deleteq3"
-        android:layout_width="43dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="308dp"
-        android:layout_marginTop="371dp"
-        android:layout_marginBottom="324dp"
-        android:background="#6A1B9A"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_delete" />
-
-    <ImageButton
-        android:id="@+id/deleteq2"
-        android:layout_width="43dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="308dp"
-        android:layout_marginTop="329dp"
-        android:layout_marginBottom="366dp"
-        android:background="#6A1B9A"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_delete" />
-
-    <ImageButton
-        android:id="@+id/deleteq1"
-        android:layout_width="43dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="308dp"
-        android:layout_marginTop="285dp"
-        android:layout_marginBottom="410dp"
-        android:background="#6A1B9A"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_delete" />
-
-    <Button
-        android:id="@+id/quiz7"
-        android:layout_width="224dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="633dp"
-        android:layout_marginBottom="62dp"
-        android:background="#C62828"
-        android:text="@string/qname"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/quiz6"
-        android:layout_width="224dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="588dp"
-        android:layout_marginBottom="107dp"
-        android:background="#C62828"
-        android:text="@string/qname"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/quiz5"
-        android:layout_width="222dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="61dp"
-        android:layout_marginTop="542dp"
-        android:layout_marginBottom="153dp"
-        android:background="#C62828"
-        android:text="@string/qname"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/drafts"
-        android:layout_width="291dp"
-        android:layout_height="61dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="468dp"
-        android:layout_marginBottom="202dp"
-        android:background="#C62828"
-        android:fontFamily="sans-serif-black"
-        android:gravity="center"
-        android:text="@string/d"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/quiz4"
-        android:layout_width="224dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="61dp"
-        android:layout_marginTop="416dp"
-        android:layout_marginBottom="279dp"
-        android:background="#2E7D32"
-        android:text="@string/qname"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/quiz3"
-        android:layout_width="224dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="61dp"
-        android:layout_marginTop="371dp"
-        android:layout_marginBottom="324dp"
-        android:background="#2E7D32"
-        android:text="@string/qname"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/quiz2"
-        android:layout_width="224dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="61dp"
-        android:layout_marginTop="329dp"
-        android:layout_marginBottom="366dp"
-        android:background="#2E7D32"
-        android:text="@string/qname"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/editTextTextPersonName"
@@ -266,9 +100,9 @@
 
     <TextView
         android:id="@+id/pubquiz"
-        android:layout_width="291dp"
-        android:layout_height="61dp"
-        android:layout_marginStart="61dp"
+        android:layout_width="268dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="60dp"
         android:layout_marginTop="207dp"
         android:layout_marginBottom="463dp"
         android:background="#2E7D32"
@@ -278,20 +112,8 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/quiz1"
-        android:layout_width="224dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="61dp"
-        android:layout_marginTop="285dp"
-        android:layout_marginBottom="410dp"
-        android:background="#2E7D32"
-        android:text="@string/qname"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

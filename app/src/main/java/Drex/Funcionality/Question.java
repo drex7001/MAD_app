@@ -1,6 +1,11 @@
 package Drex.Funcionality;
 
-public class Question {
+import android.view.ViewGroup;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+public class Question extends RecyclerView.Adapter {
     String question;
     String optionA;
     String optionB;
@@ -63,5 +68,21 @@ public class Question {
 
     public void setCorrectAns(int correctAns) {
         this.correctAns = correctAns;
+    }
+
+    @NonNull
+    @Override
+    public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        return null;
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
+
+    }
+
+    @Override
+    public int getItemCount() {
+        return 0;
     }
 }

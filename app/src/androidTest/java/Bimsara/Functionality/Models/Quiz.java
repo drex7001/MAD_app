@@ -1,4 +1,4 @@
-package com.drex.dashboard;
+package Bimsara.Functionality.Models;
 
 public class Quiz {
 
