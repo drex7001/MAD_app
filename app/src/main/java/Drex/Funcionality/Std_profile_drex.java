@@ -26,9 +26,13 @@ import java.util.List;
 
 public class Std_profile_drex extends AppCompatActivity {
 
+
     private EditText newf_name,newl_name,newmobile/*,newpassword*/;
     //private TextView newUsereemail,newpassword;
     private ImageView imageView;
+
+
+
     private Button save;
     private FirebaseAuth firebaseAuth;
     private  FirebaseDatabase firebaseDatabase;
@@ -48,7 +52,6 @@ public class Std_profile_drex extends AppCompatActivity {
         newf_name = findViewById(R.id.upname1);
         newmobile = findViewById(R.id.upemail1);
         newl_name = findViewById(R.id.upaddress1);
-        //newpassword = findViewById(R.id.upPassword1);
         save=findViewById(R.id.upbuttonup1);
 
         firebaseAuth = FirebaseAuth.getInstance();
@@ -71,11 +74,10 @@ public class Std_profile_drex extends AppCompatActivity {
                 imageURL = dataSnapshot.child("imageURL").getValue(String.class);
 
                 userprofile userprofile = new userprofile(f_name,l_name,mobile,id,imageURL);
-                //userprofile userprofile = dataSnapshot.getValue(userprofile.class);
                 newf_name.setText(f_name);
                 newmobile.setText(l_name);
                 newl_name.setText(mobile);
-                //newpassword.setText(userprofile.getUserPassword());
+
             }
 
             @Override
@@ -99,11 +101,11 @@ public class Std_profile_drex extends AppCompatActivity {
                 userprofile Userprofile = new userprofile(fname,lname,mobile,aid,aimageURL);
 
                 reference.setValue(Userprofile);
-                //startActivity(new Intent(Std_profile_drex.this,search.class));
                 finish();
                 Toast.makeText(Std_profile_drex.this,"Profile updated",Toast.LENGTH_SHORT ).show();
             }
         });
+
 
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -119,6 +121,7 @@ public class Std_profile_drex extends AppCompatActivity {
         });
 
         */
+
 
 
     }
