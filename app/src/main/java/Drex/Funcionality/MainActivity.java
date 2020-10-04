@@ -26,6 +26,7 @@ import com.google.firebase.database.ValueEventListener;
 import Rasitha.Functionality.ForumChatMainActivityRaz;
 import Rasitha.Functionality.Model.User;
 import Rasitha.Functionality.StartActivityRaz;
+import com.drex.dashboard.MainActivity_SAV;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class MainActivity extends AppCompatActivity {
@@ -115,6 +116,16 @@ public class MainActivity extends AppCompatActivity {
                 //QuizActivity.this.finish();
             }
         });
+
+        lay_achivement.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MainActivity_SAV.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 
     @Override
