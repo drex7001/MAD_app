@@ -26,7 +26,7 @@ import java.util.HashMap;
 
 public class RegisterActivityRaz extends AppCompatActivity {
 
-    MaterialEditText username,email,password;
+    MaterialEditText username,email,password,f_name,l_name,mobile;
     Button btn_register;
 
     FirebaseAuth auth;
@@ -45,6 +45,9 @@ public class RegisterActivityRaz extends AppCompatActivity {
         email = findViewById(R.id.emailraz);
         password = findViewById(R.id.password);
         btn_register =findViewById(R.id.btn_register);
+        f_name =findViewById(R.id.f_name);
+        l_name =findViewById(R.id.l_name);
+        mobile =findViewById(R.id.mobile);
 
         auth = FirebaseAuth.getInstance();
 
@@ -54,20 +57,23 @@ public class RegisterActivityRaz extends AppCompatActivity {
                 String txt_username =username.getText().toString();
                 String txt_email = email.getText().toString();
                 String txt_password =password.getText().toString();
+                String txt_f_name =f_name.getText().toString();
+                String txt_l_name =l_name.getText().toString();
+                String txt_mobile =mobile.getText().toString();
 
                 if(TextUtils.isEmpty(txt_username)||TextUtils.isEmpty(txt_email)||TextUtils.isEmpty(txt_password)){
                     Toast.makeText(RegisterActivityRaz.this, "All fields are required", Toast.LENGTH_SHORT).show();
                 } else if(txt_password.length() < 6){
                     Toast.makeText(RegisterActivityRaz.this, "password must be at least 6 characters long", Toast.LENGTH_SHORT).show();
                 } else{
-                    register(txt_username,txt_email,txt_password);
+                    register(txt_username,txt_email,txt_password,txt_f_name,txt_l_name,txt_mobile);
                 }
 
             }
         });
     }
 
-    private void register(final String username, String email, String password){
+    private void register(final String username, String email, String password, final String f_name, final String l_name, final String mobile){
 
         auth.createUserWithEmailAndPassword(email,password)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -85,6 +91,9 @@ public class RegisterActivityRaz extends AppCompatActivity {
                             hashMap.put("id", userid);
                             hashMap.put("username", username);
                             hashMap.put("imageURL", "default");
+                            hashMap.put("f_name", f_name);
+                            hashMap.put("l_name", l_name);
+                            hashMap.put("mobile", mobile);
 
                             reference.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override

@@ -52,6 +52,33 @@
             android:inputType="textPassword"
             app:met_floatingLabel="normal"
             android:hint="Password"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/f_name"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            app:met_floatingLabel="normal"
+            android:hint="First Name"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/l_name"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            app:met_floatingLabel="normal"
+            android:hint="Last Name"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mobile"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            app:met_floatingLabel="normal"
+            android:hint="Mobile"/>
         
         <Button
             android:layout_width="match_parent"

@@ -25,6 +25,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import Rasitha.Functionality.ForumChatMainActivityRaz;
 import Rasitha.Functionality.Model.User;
+import Rasitha.Functionality.RegisterActivityRaz;
 import Rasitha.Functionality.StartActivityRaz;
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -71,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         reference = FirebaseDatabase.getInstance().getReference("Users").child(firebaseUser.getUid());
 
+
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot)  {
@@ -115,6 +117,19 @@ public class MainActivity extends AppCompatActivity {
                 //QuizActivity.this.finish();
             }
         });
+
+        lay_edit_profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Std_profile_drex.class);
+                intent.putExtra("username", String.valueOf(username));
+                startActivity(intent);
+            }
+        });
+
+
+
+
     }
 
     @Override

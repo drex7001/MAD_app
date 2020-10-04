@@ -142,5 +142,11 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <string name="name_nocahange">Name</string>
+    <string name="email_nocahnge">Email</string>
+    <string name="address_nochange">Address</string>
+    <string name="passowr_nochange">Password</string>
+
+    <string name="beginner_topic">For New Comer</string>
 
 </resources>
