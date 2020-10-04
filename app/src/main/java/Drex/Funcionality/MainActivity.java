@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot)  {
                 User user = dataSnapshot.getValue(User.class);
                 username.setText(user.getUsername());
-                Toast.makeText(getApplicationContext(),"Already logged in as "+user.getUsername(),Toast.LENGTH_LONG).show();
+                //Toast.makeText(getApplicationContext(),"Already logged in as "+user.getUsername(),Toast.LENGTH_LONG).show();
 
                 if(user.getImageURL().equals("default")){
                     profile_image.setImageResource(R.drawable.businessman);

@@ -19,7 +19,7 @@ import java.util.List;
 import Rasitha.Functionality.MessageActivity;
 import Rasitha.Functionality.Model.User;
 
-public class UserAdapter extends RecyclerView.Adapter {
+public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
 
     private Context mContext;
     private List<User> mUsers;
@@ -31,23 +31,23 @@ public class UserAdapter extends RecyclerView.Adapter {
 
     @NonNull
     @Override
-    public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(mContext).inflate(R.layout.user_item,parent,false);
         return new UserAdapter.ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
-        ViewHolder myHolder = (ViewHolder) holder;
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+
         final User user = mUsers.get(position);
-        myHolder.username.setText(user.getUsername());
+        holder.username.setText(user.getUsername());
         if(user.getImageURL().equals("default")){
-            myHolder.profile_image.setImageResource(R.mipmap.ic_launcher);
+            holder.profile_image.setImageResource(R.mipmap.ic_launcher);
         }else{
-            Glide.with(mContext).load(user.getImageURL()).into(myHolder.profile_image);
+            Glide.with(mContext).load(user.getImageURL()).into(holder.profile_image);
         }
 
-        myHolder.itemView.setOnClickListener(new View.OnClickListener() {
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(mContext, MessageActivity.class);
