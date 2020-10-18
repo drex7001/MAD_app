@@ -54,9 +54,6 @@ public class ExampleInstrumentedTest {
         onView(withId(R.id.upname1)).perform(clearText(),typeText(firstname));
         onView(withId(R.id.upemail1)).perform(clearText(),typeText(lastname), closeSoftKeyboard());
         onView(withId(R.id.upbuttonup1)).perform(click());
-        // Check that the text was changed.
-//        onView(withId(R.id.textToBeChanged))
-//                .check(matches(withText(stringToBetyped)));
     }
 
     @Rule
