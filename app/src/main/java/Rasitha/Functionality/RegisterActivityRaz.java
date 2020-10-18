@@ -61,16 +61,32 @@ public class RegisterActivityRaz extends AppCompatActivity {
                 String txt_l_name =l_name.getText().toString();
                 String txt_mobile =mobile.getText().toString();
 
-                if(TextUtils.isEmpty(txt_username)||TextUtils.isEmpty(txt_email)||TextUtils.isEmpty(txt_password)){
+                if(TextUtils.isEmpty(txt_username)||TextUtils.isEmpty(txt_email)||TextUtils.isEmpty(txt_password)||TextUtils.isEmpty(txt_f_name)||TextUtils.isEmpty(txt_l_name)||TextUtils.isEmpty(txt_mobile)){
                     Toast.makeText(RegisterActivityRaz.this, "All fields are required", Toast.LENGTH_SHORT).show();
                 } else if(txt_password.length() < 6){
                     Toast.makeText(RegisterActivityRaz.this, "password must be at least 6 characters long", Toast.LENGTH_SHORT).show();
-                } else{
+                }else if(!isStringInteger(txt_mobile)){
+                    Toast.makeText(RegisterActivityRaz.this, "mobile must be a number", Toast.LENGTH_SHORT).show();
+                }else if(txt_mobile.length()!= 10){
+                    Toast.makeText(RegisterActivityRaz.this, "mobile must be a 10 digits ", Toast.LENGTH_SHORT).show();
+                }else if(txt_username.length()<5){
+                    Toast.makeText(RegisterActivityRaz.this, "username must be longer than 5 characters", Toast.LENGTH_SHORT).show();
+                }
+                else{
                     register(txt_username,txt_email,txt_password,txt_f_name,txt_l_name,txt_mobile);
                 }
 
             }
         });
+    }
+
+    private boolean isStringInteger(String number ){
+        try{
+            Integer.parseInt(number);
+        }catch(Exception e ){
+            return false;
+        }
+        return true;
     }
 
     private void register(final String username, String email, String password, final String f_name, final String l_name, final String mobile){
