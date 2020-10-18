@@ -34,9 +34,9 @@ public class ExampleInstrumentedTest {
 
     @Before
     public void initValidString() {
-        firstname = "Rasitha";
-        lastname = "Senevirathne";
-        mobile = "0717788774";
+        firstname = "akila";
+        lastname = "ratnayake";
+        mobile = "0123456789";
     }
 
     private void pauseTestFor(long milliseconds) {
