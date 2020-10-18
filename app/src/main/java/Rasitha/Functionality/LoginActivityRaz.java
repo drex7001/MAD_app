@@ -49,9 +49,12 @@ public class LoginActivityRaz extends AppCompatActivity {
                 String txt_email = email.getText().toString();
                 String txt_password = password.getText().toString();
 
-                if(TextUtils.isEmpty(txt_email)||TextUtils.isEmpty(txt_password)){
+                if(TextUtils.isEmpty(txt_email)||TextUtils.isEmpty(txt_password)) {
                     Toast.makeText(LoginActivityRaz.this, "Please fill all fields", Toast.LENGTH_SHORT).show();
-                }else {
+                }else if(txt_password.length()<6){
+                    Toast.makeText(LoginActivityRaz.this, "password must be longer than 6 characters", Toast.LENGTH_SHORT).show();
+                }
+                else {
                     auth.signInWithEmailAndPassword(txt_email,txt_password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {

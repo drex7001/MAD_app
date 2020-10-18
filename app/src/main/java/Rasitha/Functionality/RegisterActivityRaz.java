@@ -68,7 +68,7 @@ public class RegisterActivityRaz extends AppCompatActivity {
                 }else if(!isStringInteger(txt_mobile)){
                     Toast.makeText(RegisterActivityRaz.this, "mobile must be a number", Toast.LENGTH_SHORT).show();
                 }else if(txt_mobile.length()!= 10){
-                    Toast.makeText(RegisterActivityRaz.this, "mobile must be 10 digits ", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegisterActivityRaz.this, "mobile must be 10 digits", Toast.LENGTH_SHORT).show();
                 }else if(txt_username.length()<5){
                     Toast.makeText(RegisterActivityRaz.this, "username must be longer than 5 characters", Toast.LENGTH_SHORT).show();
                 }

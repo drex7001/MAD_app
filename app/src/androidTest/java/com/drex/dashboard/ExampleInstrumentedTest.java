@@ -34,9 +34,9 @@ public class ExampleInstrumentedTest {
 
     @Before
     public void initValidString() {
-        firstname = "akila";
-        lastname = "ratnyake";
-        mobile = "0987654321";
+        firstname = "Rasitha";
+        lastname = "Senevirathne";
+        mobile = "0717788774";
     }
 
     private void pauseTestFor(long milliseconds) {
@@ -51,8 +51,9 @@ public class ExampleInstrumentedTest {
     public void changeUser_Details() {
         // Type text and then press the button.
         pauseTestFor(3000);
-        onView(withId(R.id.upname1)).perform(clearText(),typeText(firstname));
+        onView(withId(R.id.upname1)).perform(clearText(),typeText(firstname), closeSoftKeyboard());
         onView(withId(R.id.upemail1)).perform(clearText(),typeText(lastname), closeSoftKeyboard());
+        onView(withId(R.id.upaddress1)).perform(clearText(),typeText(mobile), closeSoftKeyboard());
         onView(withId(R.id.upbuttonup1)).perform(click());
         // Check that the text was changed.
 //        onView(withId(R.id.textToBeChanged))

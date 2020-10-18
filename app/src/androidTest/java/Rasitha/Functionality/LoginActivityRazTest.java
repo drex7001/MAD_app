@@ -43,6 +43,7 @@ public class LoginActivityRazTest {
 
     @Test
     public void testLoginOnClick(){
+
         assertNotNull(mActivity.findViewById(R.id.btn_login));
 
         //input
