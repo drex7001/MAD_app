@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -23,6 +24,8 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import Rasitha.Functionality.RegisterActivityRaz;
 
 public class Std_profile_drex extends AppCompatActivity {
 
@@ -50,8 +53,8 @@ public class Std_profile_drex extends AppCompatActivity {
         imageView = findViewById(R.id.back_button0);
 
         newf_name = findViewById(R.id.upname1);
-        newmobile = findViewById(R.id.upemail1);
-        newl_name = findViewById(R.id.upaddress1);
+        newmobile = findViewById(R.id.upaddress1);
+        newl_name = findViewById(R.id.upemail1);
         save=findViewById(R.id.upbuttonup1);
 
         firebaseAuth = FirebaseAuth.getInstance();
@@ -75,8 +78,8 @@ public class Std_profile_drex extends AppCompatActivity {
 
                 userprofile userprofile = new userprofile(f_name,l_name,mobile,id,imageURL);
                 newf_name.setText(f_name);
-                newmobile.setText(l_name);
-                newl_name.setText(mobile);
+                newmobile.setText(mobile);
+                newl_name.setText(l_name);
 
             }
 
@@ -92,17 +95,23 @@ public class Std_profile_drex extends AppCompatActivity {
             public void onClick(View view) {
                 String aid = id;
                 String fname = newf_name.getText().toString();
-                String lname = newmobile.getText().toString();
-                String mobile = newl_name.getText().toString();
+                String lname = newl_name.getText().toString();
+                String mobile = newmobile.getText().toString();
                 String aimageURL = imageURL;
 
-
-
-                userprofile Userprofile = new userprofile(fname,lname,mobile,aid,aimageURL);
-
-                reference.setValue(Userprofile);
-                finish();
-                Toast.makeText(Std_profile_drex.this,"Profile updated",Toast.LENGTH_SHORT ).show();
+                if(TextUtils.isEmpty((CharSequence) fname)||TextUtils.isEmpty((CharSequence) mobile)||TextUtils.isEmpty((CharSequence) lname)){
+                    Toast.makeText(Std_profile_drex.this, "All fields are required", Toast.LENGTH_SHORT).show();
+                }else if(!isStringInteger(mobile)){
+                    Toast.makeText(Std_profile_drex.this, "mobile must be a number", Toast.LENGTH_SHORT).show();
+                }else if(mobile.length()!= 10){
+                    Toast.makeText(Std_profile_drex.this, "mobile must be 10 digits ", Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    userprofile Userprofile = new userprofile(fname,lname,mobile,aid,aimageURL);
+                    reference.setValue(Userprofile);
+                    finish();
+                    Toast.makeText(Std_profile_drex.this,"Profile updated",Toast.LENGTH_SHORT ).show();
+                }
             }
         });
 
@@ -121,8 +130,13 @@ public class Std_profile_drex extends AppCompatActivity {
         });
 
         */
-
-
-
+    }
+    private boolean isStringInteger(String number ){
+        try{
+            Integer.parseInt(String.valueOf(number));
+        }catch(Exception e ){
+            return false;
+        }
+        return true;
     }
 }
