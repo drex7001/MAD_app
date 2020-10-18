@@ -13,6 +13,7 @@ import Drex.Funcionality.MainActivity;
 import Drex.Funcionality.Std_profile_drex;
 
 import static androidx.test.espresso.Espresso.onView;
+import static androidx.test.espresso.action.ViewActions.clearText;
 import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.action.ViewActions.closeSoftKeyboard;
 import static androidx.test.espresso.action.ViewActions.typeText;
@@ -38,12 +39,20 @@ public class ExampleInstrumentedTest {
         mobile = "0987654321";
     }
 
+    private void pauseTestFor(long milliseconds) {
+        try {
+            Thread.sleep(milliseconds);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
     @Test
     public void changeUser_Details() {
         // Type text and then press the button.
-        onView(withId(R.id.upname1)).perform(typeText(firstname));
-        onView(withId(R.id.upemail1)).perform(typeText(lastname));
-        onView(withId(R.id.upaddress1)).perform(typeText(mobile), closeSoftKeyboard());
+        pauseTestFor(3000);
+        onView(withId(R.id.upname1)).perform(clearText(),typeText(firstname));
+        onView(withId(R.id.upemail1)).perform(clearText(),typeText(lastname), closeSoftKeyboard());
         onView(withId(R.id.upbuttonup1)).perform(click());
         // Check that the text was changed.
 //        onView(withId(R.id.textToBeChanged))
