@@ -96,7 +96,7 @@ public class Std_profile_drex extends AppCompatActivity {
                 String mobile = newl_name.getText().toString();
                 String aimageURL = imageURL;
 
-                //String password=newpassword.getText().toString();
+
 
                 userprofile Userprofile = new userprofile(fname,lname,mobile,aid,aimageURL);
 

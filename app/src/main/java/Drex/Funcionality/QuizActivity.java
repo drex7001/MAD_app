@@ -67,13 +67,6 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         option3.setOnClickListener(this);
         option4.setOnClickListener(this);
 
-        //LoadingDialog = new Dialog(QuizActivity.this);
-        //LoadingDialog.setContentView(R.layout.loading_progressbar);
-        //LoadingDialog.setCancelable(false);
-        ///LoadingDialog.getWindow().setBackgroundDrawableResource(R.drawable.progress_background);
-       // LoadingDialog.getWindow().setLayout(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
-       // LoadingDialog.show();
-
         name = getIntent().getExtras().getString("name");
         type = getIntent().getExtras().getString("type");
 
@@ -103,44 +96,17 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
 
             }
         });
-//        firestore.collection("question").document("java").collection("beginner")
-//                .get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-//            @Override
-//            public void onComplete(@NonNull Task<QuerySnapshot> task) {
-//                if(task.isSuccessful()) {
-//                    QuerySnapshot questions = task.getResult();
-//                    Log.d("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", String.valueOf(questions.size()));
-//                    for (QueryDocumentSnapshot doc : questions) {
-//                        questionList.add(new Question(doc.getString("question"),
-//                                doc.getString("a"),
-//                                doc.getString("b"),
-//                                doc.getString("c"),
-//                                doc.getString("d"),
-//                                Integer.valueOf(doc.getString("answer"))
-//                        ));
-//                    }
-//                    setQuestion();
-//                }else{
-//                    Toast.makeText(QuizActivity.this,task.getException().getMessage(),Toast.LENGTH_LONG).show();
-//                }
-//               // LoadingDialog.cancel();
-//            }
-//        });
-//        questionList.add(new Question("Question 1","A","B","C","D",1));
-//        questionList.add(new Question("Question 2","A","B","C","D",2));
-//        questionList.add(new Question("Question 3","A","B","C","D",3));
-//        questionList.add(new Question("Question 4","A","B","C","D",4));
-//        questionList.add(new Question("Question 5","A","B","C","D",4));
+//        
     }
 
     public void setQuestion(){
         timer.setText(String.valueOf(10));
 
-        question.setText(questionList.get(0).getQuestion());
-        option1.setText(questionList.get(0).getOptionA());
-        option2.setText(questionList.get(0).getOptionB());
-        option3.setText(questionList.get(0).getOptionC());
-        option4.setText(questionList.get(0).getOptionD());
+        question.setText(questionList.get(quesNum).getQuestion());
+        option1.setText(questionList.get(quesNum).getOptionA());
+        option2.setText(questionList.get(quesNum).getOptionB());
+        option3.setText(questionList.get(quesNum).getOptionC());
+        option4.setText(questionList.get(quesNum).getOptionD());
 
         qCount.setText(String.valueOf(1 + " | " + String.valueOf(questionList.size())));
         startTimer();

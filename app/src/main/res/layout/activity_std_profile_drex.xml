@@ -14,7 +14,7 @@
         android:layout_height="50sp"
         android:background="@drawable/input_f"
         android:ems="10"
-        android:hint="First Name"
+        android:hint="@string/firstName"
         android:inputType="textPersonName"
 
         android:textColorHint="#000000"
@@ -31,7 +31,7 @@
         android:layout_height="50sp"
         android:background="@drawable/input_f"
         android:ems="10"
-        android:hint="Last Name"
+        android:hint="@string/lastName"
         android:inputType="textPersonName"
 
         android:textColorHint="#000000"
@@ -89,7 +89,7 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/input_f"
         android:ems="10"
-        android:hint="Mobile"
+        android:hint="@string/mobile"
         android:textColorHint="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
